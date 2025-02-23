@@ -2,7 +2,7 @@ const axios = require('axios');
 
 // grab the API key from the .env
 require('dotenv').config();
-const url = `https://eth-mainnet.g.alchemy.com/v2/${process.env.API_KEY || "pFWDmuE7rPx1fKqOwPtwH-Fjwi1IwtYI"}`;
+const url = `https://eth-mainnet.g.alchemy.com/v2/${process.env.API_KEY}`;
 
 async function getBlockNumber() {
     const response = await axios.post(url, {
